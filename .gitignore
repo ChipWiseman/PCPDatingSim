@@ -1,2 +1,8 @@
 .pcpds/game/images
 .pcpds/game/sounds
+*.png
+*.psd
+*.webm
+*.jpg
+*.kra
+*.wav
