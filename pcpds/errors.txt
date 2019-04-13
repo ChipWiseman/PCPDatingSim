@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/credits.rpy", line 13: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    ease 2 zoom 1.2
+    ^
+
+Ren'Py Version: Ren'Py 7.2.1.457
+Mon Apr 01 09:38:00 2019

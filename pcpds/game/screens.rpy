@@ -4,6 +4,25 @@
 
 init offset = -1
 
+screen image_attributes:
+
+    drag:
+        draggable True
+
+        frame:
+            style "empty"
+            background "#0004"
+            padding (5, 5)
+
+            has vbox
+
+            text "Image Attributes" color "#fff" size 14
+
+            null height 10
+
+            for tag in renpy.get_showing_tags(sort=True):
+                $ attributes = " ".join(renpy.get_attributes(tag))
+                text "[tag] [attributes]" color "#fff" size 14
 
 ################################################################################
 ## Styles
@@ -348,6 +367,7 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+#image mm =
 
 screen main_menu():
 
@@ -356,8 +376,9 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    add gui.main_menu_background
+    #add gui.main_menu_background
 
+    add Movie(play="images/DemoMenu_hq.webm")
     ## This empty frame darkens the main menu.
     frame:
         pass

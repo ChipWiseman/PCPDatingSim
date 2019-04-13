@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/artClassDayOne.rpy", line 20, in script
+    if nameFlag:
+  File "game/artClassDayOne.rpy", line 20, in <module>
+    if nameFlag:
+NameError: name 'nameFlag' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/artClassDayOne.rpy", line 20, in script
+    if nameFlag:
+  File "C:\Users\Tyler\Desktop\renpy-7.2.1-sdk\renpy\ast.py", line 1803, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Tyler\Desktop\renpy-7.2.1-sdk\renpy\python.py", line 1960, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Tyler\Desktop\renpy-7.2.1-sdk\renpy\python.py", line 1953, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/artClassDayOne.rpy", line 20, in <module>
+    if nameFlag:
+NameError: name 'nameFlag' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 7.2.1.457
+pcpds 1.0
+Mon Apr 01 08:55:16 2019
